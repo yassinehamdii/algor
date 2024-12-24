@@ -1,0 +1,153 @@
+Prise de décision : Leap Year Checker
+
+Début
+   ecrir( "Entrer l'année (year)")
+lire (year)
+    Si (year mod 4 = 0) ET (year mod 100 ≠ 0) OU (year mod 400 = 0) Alors
+        ecrir ( "L'année est bissextile")
+    Sinon
+         ecrir ( "L'année n'est pas bissextile")
+    Fin Si
+Fin
+
+Prise de décision : Ticket Pricing
+
+Début
+    ecrir("Entrer l'âge de l'utilisateur (age)")
+    lire(age)
+    Si (age ≤ 12) Alors
+        ecrir("Le prix du billet est de 10 $")
+    Sinon Si (age ≥ 13 ET age ≤ 17) Alors
+        ecrir("Le prix du billet est de 15 $")
+    Sinon
+        ecrir("Le prix du billet est de 20 $")
+    Fin Si
+Fin
+
+Prise de décision : Conseil en vêtements de pluie
+
+Début
+    ecrir("Entrer la température actuelle (temperature)")
+    lire(temperature)
+    ecrir("Est-ce qu'il pleut ? (Oui ou Non)")
+    lire(rain)
+    Si (temperature < 15) Alors
+        Si (rain = "Oui") Alors
+            ecrir("Portez un manteau chaud et un parapluie.")
+        Sinon
+            ecrir("Portez un manteau chaud.")
+        Fin Si
+    Sinon Si (temperature ≥ 15 ET temperature ≤ 25) Alors
+        Si (rain = "Oui") Alors
+            ecrir("Portez un imperméable léger.")
+        Sinon
+            ecrir("Habillez-vous normalement.")
+        Fin Si
+    Sinon
+        Si (rain = "Oui") Alors
+            ecrir("Portez des vêtements légers et prenez un parapluie.")
+        Sinon
+            ecrir("Portez des vêtements légers.")
+        Fin Si
+    Fin Si
+Fin
+
+
+Récursion : Séquence de Fibonacci
+
+Fonction Fibonacci(n)
+    Si (n ≤ 0) Alors
+        Retourner 0
+    Sinon Si (n = 1) Alors
+        Retourner 1
+    Sinon
+        Retourner Fibonacci(n - 1) + Fibonacci(n - 2)
+    Fin Si
+Fin Fonction
+
+Début
+    ecrir("Entrer un nombre (n)")
+    lire(n)
+    ecrir("Le nième nombre de Fibonacci est :", Fibonacci(n))
+Fin
+
+
+Fonction Fibonacci(n)
+    Si (n ≤ 0) Alors
+        Retourner 0
+    Sinon Si (n = 1) Alors
+        Retourner 1
+    Sinon
+        Retourner Fibonacci(n - 1) + Fibonacci(n - 2)
+    Fin Si
+Fin Fonction
+
+Début
+    ecrir("Entrer un nombre (n)")
+    lire(n)
+    ecrir("Le nième nombre de Fibonacci est :", Fibonacci(n))
+Fin
+
+
+Récursion : Séquence de Fibonacci
+
+Fonction Fibonacci(n)
+    Si (n ≤ 0) Alors
+        Retourner 0
+    Sinon Si (n = 1) Alors
+        Retourner 1
+    Sinon
+        Retourner Fibonacci(n - 1) + Fibonacci(n - 2)
+    Fin Si
+Fin Fonction
+
+Début
+    ecrir("Entrer un nombre (n)")
+    lire(n)
+    ecrir("Le nième nombre de Fibonacci est :", Fibonacci(n))
+Fin
+
+
+Récursion : Vérificateur de Palindrome
+Fonction IsPalindrome(s)
+    Supprimer tous les espaces, la ponctuation et mettre en minuscules (s)
+    Si (longueur(s) ≤ 1) Alors
+        Retourner Vrai
+    Sinon Si (s[0] ≠ s[-1]) Alors
+        Retourner Faux
+    Sinon
+        Retourner IsPalindrome(s[1:-1])
+    Fin Si
+Fin Fonction
+
+Début
+    ecrir("Entrer une chaîne (s)")
+    lire(s)
+    Si (IsPalindrome(s)) Alors
+        ecrir("La chaîne est un palindrome.")
+    Sinon
+        ecrir("La chaîne n'est pas un palindrome.")
+    Fin Si
+Fin
+
+
+Récursion : Fonction de puissance
+
+Fonction Power(base, exponent)
+    Si (exponent = 0) Alors
+        Retourner 1
+    Sinon
+        Retourner base * Power(base, exponent - 1)
+    Fin Si
+Fin Fonction
+
+Début
+    ecrir("Entrer un nombre (base)")
+    lire(base)
+    ecrir("Entrer un exposant (exponent)")
+    lire(exponent)
+    ecrir(base, "élevé à la puissance", exponent, "est égal à", Power(base, exponent))
+Fin
+
+
+
